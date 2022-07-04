@@ -27,10 +27,7 @@ if [ ! -d "$output_dir" ]; then
 fi
 
 # ↓This for single GPU
-#python run_bert_fine_tune_cls.py --data_dir='/workspace/bert/data/bert_demo' \
-
-# ↓This for 2 GPU
-python -m torch.distributed.launch --nproc_per_node 2 run_bert_fine_tune_cls.py --data_dir='/workspace/bert/data/bert_demo' \
+python run_bert_fine_tune_cls.py --data_dir='/workspace/bert/data/bert_demo' \
  	--config_name='/workspace/bert/pre_trained_model/KoreALBERT/config/config_albert_base_v2.json' \
        --tokenizer_name='/workspace/bert/pre_trained_model/KoreALBERT/sentencepiece/sp42g.cased.20191125.model' \
        --task_name='serp' \

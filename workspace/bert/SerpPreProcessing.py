@@ -25,18 +25,18 @@ class SerpPreProcessing:
         self.test_data = [] # 상세 테스트 결과 출력용
         self.test_data_srid = [] # eval 여러번 실행되면 srid 중복돼서...
         
-        # 삭제/변환 대상 Label 읽기
-        if self.args.pre_conv_label == True:
-            self.__read_label_conversion_delete_file()
+        # # 삭제/변환 대상 Label 읽기
+        # if self.args.pre_conv_label == True:
+            # self.__read_label_conversion_delete_file()
         
-        # 불용어 파일 읽기
-        if self.args.pre_delete_stopword == True:
-            self.__read_stopwords_file()
-            #print("- Stopwords :", self.stopwords)
+        # # 불용어 파일 읽기
+        # if self.args.pre_delete_stopword == True:
+            # self.__read_stopwords_file()
+            # #print("- Stopwords :", self.stopwords)
     
-        # 유의어 변경 매핑 읽기
-        if self.args.pre_convert_word == True:
-            self.__read_word_conversion_file()  
+        # # 유의어 변경 매핑 읽기
+        # if self.args.pre_convert_word == True:
+            # self.__read_word_conversion_file()  
 
     def __read_label_conversion_delete_file(self):        
         mapping_f = open("label_conversion_delete.txt", "r", encoding="utf-8-sig")
