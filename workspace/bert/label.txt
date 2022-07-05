@@ -1,3 +1,4 @@
-FR
-GM
-SC
+Accident_Compensation
+Product_subscription_cancellation
+Transfer_Withdrawal_Loan
+Balance_transaction
