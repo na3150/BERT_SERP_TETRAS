@@ -29,10 +29,10 @@ class SerpPreProcessing:
         # if self.args.pre_conv_label == True:
             # self.__read_label_conversion_delete_file()
         
-        # # 불용어 파일 읽기
-        # if self.args.pre_delete_stopword == True:
-            # self.__read_stopwords_file()
-            # #print("- Stopwords :", self.stopwords)
+         # 불용어 파일 읽기
+         if self.args.pre_delete_stopword == True:
+             self.__read_stopwords_file()
+             #print("- Stopwords :", self.stopwords)
     
         # # 유의어 변경 매핑 읽기
         # if self.args.pre_convert_word == True:
